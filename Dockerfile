@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json ./
 RUN npm install --omit=dev --no-audit --no-fund
 COPY server.js README.md ./
-EXPOSE 3000
-CMD ["node", "server.js"]
+EXPOSE 7860
+CMD ["sh", "-c", "PORT=7860 node server.js"]
