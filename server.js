@@ -4,7 +4,7 @@ import { createServer } from "node:http";
 import net from "node:net";
 import { WebSocketServer } from "ws";
 
-const PORT = parseInt(process.env.PORT || "8000", 10);
+const PORT = parseInt(process.env.PORT || "3000", 10);
 
 const DC_TABLE = {
   "1": "149.154.175.50", "2": "149.154.161.144", "3": "149.154.175.100",
