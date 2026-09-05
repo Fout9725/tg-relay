@@ -1,5 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "cd /workspaces/tg-relay && npm install --no-audit --no-fund && echo DEPS_OK",
   "postStartCommand": "cd /workspaces/tg-relay && PORT=3000 nohup node server.js > /tmp/relay.log 2>&1 &",
   "forwardPorts": [3000]
 }
